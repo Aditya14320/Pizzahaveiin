@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pizza Have iin | Home</title>
+  <link rel="stylesheet" href="css/style.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+  <style>
+    .hero {
+      height: 90vh;
+      background: url('images/hero.jpg') center/cover no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      text-align: center;
+      position: relative;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      height: 100%; width: 100%;
+      background: rgba(0, 0, 0, 0.5);
+    }
+    .hero-content {
+      position: relative;
+      z-index: 1;
+    }
+    .hero-content h1 {
+      font-size: 3rem;
+      color: #FFD700;
+    }
+    .hero-content p {
+      font-size: 1.2rem;
+      margin-top: 1rem;
+    }
+    .intro-section {
+      padding: 3rem 2rem;
+      background: #111;
+      color: #fff;
+      text-align: center;
+    }
+    .intro-section h2 {
+      color: #FFD700;
+      margin-bottom: 1rem;
+    }
+    .gallery-preview {
+      padding: 3rem 2rem;
+      background: #1c1c1c;
+    }
+    .gallery-preview h2 {
+      color: #FFD700;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1rem;
+    }
+    .gallery-card {
+      background: #222;
+      border-radius: 12px;
+      overflow: hidden;
+      color: #fff;
+      transition: transform 0.3s ease;
+    }
+    .gallery-card:hover {
+      transform: scale(1.03);
+    }
+    .gallery-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+    .gallery-card p {
+      padding: 1rem;
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Offer Banner -->
+<div class="offer-banner">
+  🎉 <strong>Buy One Get One FREE on Pizzas</strong> !
+</div>
+<style>
+  .offer-banner {
+    background: linear-gradient(to right, #ff4e00, #ec9f05);
+    color: #fff;
+    text-align: center;
+    padding: 20px 30px;
+    font-weight: 800;
+    font-size: 2rem;
+    animation: pulse 2s infinite;
+    z-index: 999;
+    position: relative;
+  }
+  @keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.8; }
+    100% { opacity: 1; }
+  }
+</style>
+
+  <header class="header">
+    <nav class="navbar" data-aos="fade-down">
+      <div class="logo">🍕 Pizza Have iin</div>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content" data-aos="zoom-in">
+      <h1>Made Fresh. Served Hot.</h1>
+      <p>Delicious pizzas, cheesy burgers, and icy cold shakes — only at Pizza Have iin!</p>
+    </div>
+  </section>
+
+  <section class="intro-section" data-aos="fade-up">
+    <h2>Welcome to Pizza Have iin</h2>
+    <p>From mouth-watering pizzas and crunchy garlic bread to creamy milkshakes and spicy burgers, we serve everything with love and flavor. Every bite is a celebration of quality and freshness. Come dine with us or order in — your perfect meal awaits!</p>
+  </section>
+
+  <section class="gallery-preview" data-aos="fade-up">
+    <h2>Customer Favorites</h2>
+    <div class="gallery-grid">
+      <div class="gallery-card">
+        <img src="images/gallery1.webp" alt="Pizza & Shakes">
+        <p>Our signature combo — Veggie Pizza with Oreo Shake. A crowd favorite!</p>
+      </div>
+      <div class="gallery-card">
+        <img src="images/gallery2.jpeg" alt="Chocolate Shake">
+        <p>Thick, creamy chocolate shake topped with whipped cream. A dessert in a cup!</p>
+      </div>
+      <div class="gallery-card">
+        <img src="images/gallery3.jpg" alt="Cheesy Pepperoni Pizza">
+        <p>Cheesy pepperoni pizza with a perfect stretch and spicy twist.</p>
+      </div>
+      <div class="gallery-card">
+        <img src="images/gallery4.jpeg" alt="Pizza Flatlay">
+        <p>A perfect shot of our loaded pizza with fresh toppings and herbs.</p>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+</body>
+</html>
